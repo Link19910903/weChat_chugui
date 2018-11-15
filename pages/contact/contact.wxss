@@ -1,0 +1,156 @@
+page {
+    background: #f6f6f6;
+}
+
+.more {
+    position: relative;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 0;
+    min-height: 100vh;
+    padding-bottom: 80rpx;
+}
+
+.user-info {
+    height: 440rpx;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.user-info .avatar {
+    margin-top: 100rpx;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+.user-info text {
+    font-size: 32rpx;
+    font-weight: normal;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 300rpx;
+    transform: translate(-50%)
+
+}
+
+.btn-to-home {
+    position: absolute;
+    padding: 60rpx;
+    z-index: 2;
+}
+
+.btn-to-home .img-to-home {
+    width: 90rpx;
+    height: 90rpx;
+}
+
+.links {
+    margin-top: 30rpx;
+    background: #fff;
+    margin-bottom: 20rpx;
+}
+
+.links .link-item {
+    width: calc(100vw - 44rpx);
+    align-items: top;
+    line-height: 90rpx;
+    margin-left: 44rpx;
+    padding-right: 80rpx;
+    box-sizing: border-box;
+    border-bottom: solid 2rpx #eeeeee;
+}
+
+.links .link-item:last-child {
+    border: none;
+}
+
+.links .link-item text {
+    color: #292929;
+    font-size: 32rpx;
+}
+.share,
+.tel {
+    padding-left: 50rpx;
+}
+
+.links .link-item .normal-flex {
+    text-align: right;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.links .link-item .icon {
+    margin-left: 10rpx;
+    border: 2rpx solid #292929;
+    width: 20rpx;
+    height: 20rpx;
+    border: solid 2rpx #979797;
+    border-width: 2rpx 2rpx 0 0;
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    transform: rotate(45deg);
+}
+
+.links .link-item .location {
+    /* flex: 0 0 420rpx; */
+    text-align: right;
+    /* line-height: 1.5; */
+    /* margin: 14rpx 0; */
+    max-width: 65vw;
+    color: #979797;
+    /* word-wrap: break-word; */
+    font-size: 32rpx;
+}
+
+.links .link-item .action-icon {
+    width: 36rpx;
+    height: 36rpx;
+    margin-right: 20rpx;
+}
+
+.links button {
+    background: #ffffff;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+.links button::after {
+    border: 0;
+}
+
+.logo-wrap {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 20rpx;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.link-item {
+    background-color: #fff;
+}
+
+.site {
+    /* width: 50%; */
+}
+.item {
+    position: absolute;
+    left: 44rpx;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.links image {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%)
+}

@@ -1,0 +1,22 @@
+<swiper indicator-dots="{{false}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" class="banner">
+    <block wx:for="{{imgUrls}}" wx:key="id">
+        <swiper-item>
+            <navigator url="{{item.link}}?id={{item.id}}" hover-class="none" bindtap="{{item.tap}}">
+                <image src="{{item.url}}" class="slide-image" mode="widthFix"/>
+            </navigator>
+        </swiper-item>
+    </block>
+</swiper>
+<view class="jieshao">
+    <view class='classification' wx:for="{{classUrl}}" wx:key="id">
+        <block class="classbox">
+            <navigator url="{{item.link}}" hover-class="none" bindtap="{{item.tap}}">
+                <image src="{{item.image}}"></image>
+                <text>{{item.name}}</text>
+            </navigator>
+        </block>
+    </view>
+</view>
+<view class="tupian">
+    <image style="" mode="widthFix" hover-class="none" src="{{item.image}}"  wx:for="{{detailData}}" wx:key="id"></image>
+</view>

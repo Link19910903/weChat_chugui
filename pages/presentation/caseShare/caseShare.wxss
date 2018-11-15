@@ -1,0 +1,32 @@
+page{
+	background-color: #f4f4f4;
+}
+.case {
+	height: 100%;
+	padding: 20rpx 20rpx 20rpx 0;
+	overflow: hidden;
+}
+.box {
+	float: left;
+	margin-top: 20rpx;
+	margin-left: 25rpx;
+	margin-bottom: 20rpx;
+	width: 340rpx;
+	background-color: #fff;
+}
+.box image {
+	display: block;
+	width: 340rpx;
+	height: 340rpx;
+}
+.name{
+	padding: 20rpx;
+	font-size: 32rpx;
+	box-shadow: 2rpx 2rpx 2rpx rgba(0, 0, 0, .2);
+}
+.none {
+	text-align: center;
+	color: #ccc;
+	margin-bottom: 30rpx;
+	font-size: 30rpx;
+}

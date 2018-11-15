@@ -1,0 +1,55 @@
+{
+  "pages":[
+  "pages/index/index",
+	"pages/portfolio/portfolio",
+	"pages/postIndex/postIndex",
+	"pages/aboutus/aboutus",
+	"pages/contact/contact",
+	"pages/presentation/presentation",
+	"pages/presentation/shareView/shareView",
+	"pages/presentation/caseShare/caseShare"
+  ],
+  "window":{
+    "navigationBarTitleText": "百能橱柜",
+		"navigationBarBackgroundColor": "#a77d6e",
+		"navigationBarTextStyle": "white",
+		"backgroundColor": "#ffffff",
+		"enablePullDownRefresh":false
+  },"tabBar": {
+		"color": "#ABABAB",
+		"selectedColor": "#000000",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"text": "主页",
+				"pagePath": "pages/index/index",
+				"iconPath": "assets/presentation/icons/iconset-home.png",
+				"selectedIconPath": "assets/presentation/icons/iconset-home-selected-light.png"
+			},
+			{
+				"text": "百能橱柜",
+				"pagePath": "pages/portfolio/portfolio",
+				"iconPath": "assets/presentation/icons/iconset-portfolio.png",
+				"selectedIconPath": "assets/presentation/icons/iconset-portfolio-selected-light.png"
+			},
+			{
+				"text": "商业资讯",
+				"pagePath": "pages/postIndex/postIndex",
+				"iconPath": "assets/presentation/icons/iconset-blog.png",
+				"selectedIconPath": "assets/presentation/icons/iconset-blog-selected-light.png"
+			},
+			{
+				"text": "关于我们",
+				"pagePath": "pages/aboutus/aboutus",
+				"iconPath": "assets/presentation/icons/iconset-about.png",
+				"selectedIconPath": "assets/presentation/icons/iconset-about-selected-light.png"
+			},
+			{
+				"text": "联系我们",
+				"pagePath": "pages/contact/contact",
+				"iconPath": "assets/presentation/icons/iconset-contact.png",
+				"selectedIconPath": "assets/presentation/icons/iconset-contact-selected-light.png"
+			}
+		]
+	}
+}

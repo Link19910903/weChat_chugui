@@ -1,0 +1,35 @@
+<view class="product-detail-wrapper {{enableCustomButton?'pt100':''}}">
+    <view class="product-content" wx:for="{{case}}" wx:key="{{item.id}}">
+        <view class="content-wrapper">
+            <view class="slider-wrapper">
+                <swiper  class="image-slider">
+                    <swiper-item class="slide-item"  wx:for="{{item.swiper}}" wx:key="{{item.id}}">
+                        <image src="{{item.image}}"></image>
+                    </swiper-item>
+                </swiper>
+            </view>
+            <view class="page-wrapper">
+                <view class="text-wrapper">
+                    <view class="flex-row center-item">
+                        <text class="title">{{item.cate_name}}</text>
+                        <view bindtap="openShareView" class="share">
+                            <text class="share-text">分享</text>
+                            <image class="share-img" src="../../../assets/blog/icon-share-transform.png"></image>
+                        </view>
+                    </view>
+                    <text class="description">{{item.text}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="share-view111">
+            <view wx:for="{{item.images}}" wx:key="{{item.child_id}}">
+                <image style="" mode="widthFix" src="{{item.image}}"></image>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="bottom auto-flex flex-row">
+    <button bindtap="tell" class="main-button normal-flex"  style="background-color: #a77d6e;color:#fff">
+    电话询价
+  </button>
+</view>

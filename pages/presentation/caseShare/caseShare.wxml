@@ -1,0 +1,7 @@
+<view class="case">
+    <navigator url="/pages/presentation/shareView/shareView?id={{item.id}}" hover-class="none" class="box" wx:for="{{case}}" wx:key="{{item.id}}" bindtap="cos">
+        <image style="" mode="scaleToFill" src="{{item.image}}" binderror="" bindload=""></image>
+        <view class="name">{{item.name}}</view>
+    </navigator>
+</view>
+    <view class="none">-无更多产品-</view>

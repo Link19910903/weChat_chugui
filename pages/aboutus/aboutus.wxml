@@ -1,0 +1,3 @@
+<view class="aboutUs">
+    <image url="{{item.link}}" mode="widthFix" hover-class="none" src="{{item.imgUrl}}"  wx:for="{{imgData}}" wx:key="id"></image>
+</view>

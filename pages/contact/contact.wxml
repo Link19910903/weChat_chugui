@@ -1,0 +1,49 @@
+<view bindtap="navigateToHome" class="btn-to-home" wx:if="{{isShareCompany}}">
+    <image class="img-to-home" mode="aspectFill" src="{{iconPath.ICON_TO_HOME}}"></image>
+</view>
+<view class="more gray-bg" style="height: 100vh;">
+    <view bindtap="showVersion" class="user-info flex-col" style="background: #A77D6E">
+        <image class="avatar" src="../../images/class1.png" style="width: 160rpx; height: 160rpx; border-radius: 81rpx; will-change: transform;"></image>
+        <text>乐清市城东百能橱柜商行</text>
+    </view>
+    <view class="links">
+        <button bindtap="share" class="flex-row link-item space-between" openType="share">
+            <view class="flex-row fl">
+                <image class="action-icon" src="../../assets/presentation/icons/ic-share.png"></image>
+                <text class="share">分享小程序</text>
+            </view>
+            <view class="normal-flex flex-row center fr">
+                <view class="icon"></view>
+            </view>
+        </button>
+        <button bindtap="navigateToContactForm" class="flex-row link-item space-between">
+            <view class="flex-row fl">
+                <image class="action-icon" src="../../assets/presentation/icons/contact/icon-form-editor.png"></image>
+                <text class="tel">联系我们</text>
+            </view>
+            <view class="normal-flex flex-row center fr">
+                <view class="icon"></view>
+            </view>
+        </button>
+        <button bindtap="tel" class="flex-row link-item space-between">
+            <view class="flex-row fl">
+                <text>联系电话</text>
+            </view>
+            <view class="normal-flex flex-row center fr">
+                <text class="location">057762516066</text>
+                <view class="icon"></view>
+            </view>
+        </button>
+        <button bindtap="openMap" class=" address flex-row link-item space-between" wx:for="{{address}}" wx:key="id">
+            <view class=" fl item">
+                <text>{{item.name}}</text>
+            </view>
+            <view class="site fr" >
+                <view class="location fl">
+                    {{item.address}}
+                </view>
+                <view class="icon fr"></view>
+            </view>
+        </button>
+    </view>
+</view>

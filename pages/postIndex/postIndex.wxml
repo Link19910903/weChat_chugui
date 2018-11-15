@@ -1,0 +1,17 @@
+<view class="tab">
+    <view class="lists">
+        <view class="list">全部</view>
+    </view>
+</view>
+<scroll-view class="items" scroll-y="{{true}}">
+    <navigator class="item" hover-class="none" url="" wx:for="{{information}}" wx:key="{{item.id}}">
+        <view>
+            <image style="" mode="center" src="{{item.image}}"></image>
+        </view>
+        <view class="title">
+            <view class="cont">{{item.title}}</view>
+            <view class="time">2个月前</view>
+        </view>
+    </navigator>
+
+</scroll-view>
